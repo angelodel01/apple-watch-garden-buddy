@@ -86,8 +86,4 @@ class Zone : Encodable{
         self.slope = slope
         self.sprinkler_type = sprinkler_type
     }
-//
-//    required init(from decoder:Decoder) throws {
-//
-//    }
 }

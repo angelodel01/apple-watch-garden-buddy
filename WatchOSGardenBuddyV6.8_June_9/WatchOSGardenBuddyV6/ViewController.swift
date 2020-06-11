@@ -39,8 +39,8 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         super.viewDidLoad()
         //connecting a session to WatchOS
 
-        dynamoGet() //for angelo when merging
-        getUsersTableEntry(key: "1")
+        dynamoGet() //Dynamo Get for schedules
+        getUsersTableEntry(key: "1") //Dynamo Get for Users and Zones
     }
 
     

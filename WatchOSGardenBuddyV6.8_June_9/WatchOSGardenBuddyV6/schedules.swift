@@ -61,8 +61,6 @@ class Mod{
         let valid = JSONSerialization.isValidJSONObject(jsonObject) // true
         if (!valid){
             print("ERROR can't parse mod data")
-        }else{
-//            print("Success");
         }
         return jsonObject
     }
