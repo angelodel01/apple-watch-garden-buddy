@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1821507409E3EB945EB51652 /* Pods_WatchOSGardenBuddyV6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CE075E3CB5DD57B0766825 /* Pods_WatchOSGardenBuddyV6.framework */; };
+		E84AD9C1246505B4006B42C9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9BF246505B4006B42C9 /* ExtensionDelegate.swift */; };
+		E84AD9C2246505B4006B42C9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9C0246505B4006B42C9 /* ComplicationController.swift */; };
+		E84AD9C5246505BA006B42C9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9C3246505BA006B42C9 /* InterfaceController.swift */; };
+		E84AD9C6246505BA006B42C9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9C4246505BA006B42C9 /* NotificationController.swift */; };
+		E84AD9CA246505C2006B42C9 /* ZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9C7246505C2006B42C9 /* ZoneView.swift */; };
+		E84AD9CB246505C2006B42C9 /* ZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9C8246505C2006B42C9 /* ZoneViewController.swift */; };
+		E84AD9CC246505C2006B42C9 /* ZoneRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84AD9C9246505C2006B42C9 /* ZoneRowController.swift */; };
+		E850EA94246D077600BFF1D4 /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850EA93246D077600BFF1D4 /* users.swift */; };
+		E8DF2DF02475EAAB007104C2 /* ZoneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF2DEF2475EAAB007104C2 /* ZoneData.swift */; };
+		E8E011A32464FF650072427B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011A22464FF650072427B /* AppDelegate.swift */; };
+		E8E011A52464FF650072427B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011A42464FF650072427B /* SceneDelegate.swift */; };
+		E8E011A72464FF650072427B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011A62464FF650072427B /* ViewController.swift */; };
+		E8E011AA2464FF650072427B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E011A82464FF650072427B /* Main.storyboard */; };
+		E8E011AC2464FF660072427B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E011AB2464FF660072427B /* Assets.xcassets */; };
+		E8E011AF2464FF660072427B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E011AD2464FF660072427B /* LaunchScreen.storyboard */; };
+		E8E011BA2464FF660072427B /* WatchOSGardenBuddyV6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011B92464FF660072427B /* WatchOSGardenBuddyV6Tests.swift */; };
+		E8E011BF2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8E011BE2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8E011C52464FF660072427B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E011C32464FF660072427B /* Interface.storyboard */; };
+		E8E011C72464FF660072427B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E011C62464FF660072427B /* Assets.xcassets */; };
+		E8E011CE2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8E011CD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8E011DB2464FF670072427B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E011DA2464FF670072427B /* Assets.xcassets */; };
+		E8E011EF2464FFFA0072427B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E011EE2464FFFA0072427B /* awsconfiguration.json */; };
+		E8E011F12465006F0072427B /* schedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011F02465006F0072427B /* schedules.swift */; };
+		E8E011F32465007E0072427B /* StyleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011F22465007E0072427B /* StyleGenerator.swift */; };
+		E8E011F5246500990072427B /* TimeChunk+DateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011F4246500990072427B /* TimeChunk+DateComponents.swift */; };
+		E8E011F7246500A90072427B /* YardWorkZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011F6246500A90072427B /* YardWorkZone.swift */; };
+		E8E011F9246500B90072427B /* ZoneCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011F8246500B90072427B /* ZoneCollectionView.swift */; };
+		E8E011FB246500D20072427B /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011FA246500D20072427B /* PopUpView.swift */; };
+		E8E011FD246500FD0072427B /* ExampleNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011FC246500FD0072427B /* ExampleNotificationController.swift */; };
+		E8E011FF246501140072427B /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E011FE246501140072427B /* ExampleController.swift */; };
+		E8E012012465012D0072427B /* DynamoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E012002465012C0072427B /* DynamoController.swift */; };
+		E8E01203246501420072427B /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E01202246501420072427B /* DatePickerController.swift */; };
+		E8E01205246501590072427B /* CustomCalendarExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E01204246501590072427B /* CustomCalendarExampleController.swift */; };
+		E8EBA6CF247B03F400C5D401 /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EBA6CE247B03F400C5D401 /* WatchController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8E011B62464FF660072427B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E011972464FF650072427B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E0119E2464FF650072427B;
+			remoteInfo = WatchOSGardenBuddyV6;
+		};
+		E8E011C02464FF660072427B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E011972464FF650072427B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E011BD2464FF660072427B;
+			remoteInfo = "WatchOSGardenBuddyV6 WatchKit App";
+		};
+		E8E011CF2464FF660072427B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E011972464FF650072427B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E011CC2464FF660072427B;
+			remoteInfo = "WatchOSGardenBuddyV6 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8E011E32464FF670072427B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8E011CE2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011E72464FF670072427B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E8E011BF2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D7D2582AE7317F384891484 /* Pods-WatchOSGardenBuddyV6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOSGardenBuddyV6.release.xcconfig"; path = "Target Support Files/Pods-WatchOSGardenBuddyV6/Pods-WatchOSGardenBuddyV6.release.xcconfig"; sourceTree = "<group>"; };
+		B8CE075E3CB5DD57B0766825 /* Pods_WatchOSGardenBuddyV6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchOSGardenBuddyV6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84AD9BF246505B4006B42C9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E84AD9C0246505B4006B42C9 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E84AD9C3246505BA006B42C9 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E84AD9C4246505BA006B42C9 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E84AD9C7246505C2006B42C9 /* ZoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneView.swift; sourceTree = "<group>"; };
+		E84AD9C8246505C2006B42C9 /* ZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneViewController.swift; sourceTree = "<group>"; };
+		E84AD9C9246505C2006B42C9 /* ZoneRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneRowController.swift; sourceTree = "<group>"; };
+		E850EA93246D077600BFF1D4 /* users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
+		E8DF2DEF2475EAAB007104C2 /* ZoneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneData.swift; sourceTree = "<group>"; };
+		E8E0119F2464FF650072427B /* WatchOSGardenBuddyV6.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSGardenBuddyV6.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E011A22464FF650072427B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8E011A42464FF650072427B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8E011A62464FF650072427B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8E011A92464FF650072427B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8E011AB2464FF660072427B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E011AE2464FF660072427B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8E011B02464FF660072427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E011B52464FF660072427B /* WatchOSGardenBuddyV6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchOSGardenBuddyV6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E011B92464FF660072427B /* WatchOSGardenBuddyV6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSGardenBuddyV6Tests.swift; sourceTree = "<group>"; };
+		E8E011BB2464FF660072427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E011BE2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOSGardenBuddyV6 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E011C42464FF660072427B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E8E011C62464FF660072427B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E011C82464FF660072427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E011CD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchOSGardenBuddyV6 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E011DA2464FF670072427B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E011DC2464FF670072427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E011DD2464FF670072427B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E8E011EE2464FFFA0072427B /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		E8E011F02465006F0072427B /* schedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schedules.swift; sourceTree = "<group>"; };
+		E8E011F22465007E0072427B /* StyleGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGenerator.swift; sourceTree = "<group>"; };
+		E8E011F4246500990072427B /* TimeChunk+DateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeChunk+DateComponents.swift"; sourceTree = "<group>"; };
+		E8E011F6246500A90072427B /* YardWorkZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YardWorkZone.swift; sourceTree = "<group>"; };
+		E8E011F8246500B90072427B /* ZoneCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneCollectionView.swift; sourceTree = "<group>"; };
+		E8E011FA246500D20072427B /* PopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		E8E011FC246500FD0072427B /* ExampleNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleNotificationController.swift; sourceTree = "<group>"; };
+		E8E011FE246501140072427B /* ExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleController.swift; sourceTree = "<group>"; };
+		E8E012002465012C0072427B /* DynamoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoController.swift; sourceTree = "<group>"; };
+		E8E01202246501420072427B /* DatePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
+		E8E01204246501590072427B /* CustomCalendarExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalendarExampleController.swift; sourceTree = "<group>"; };
+		E8EBA6CE247B03F400C5D401 /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
+		F87221B2DA0CF9F4F3D96081 /* Pods-WatchOSGardenBuddyV6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchOSGardenBuddyV6.debug.xcconfig"; path = "Target Support Files/Pods-WatchOSGardenBuddyV6/Pods-WatchOSGardenBuddyV6.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64F43F5BAB6BC844D072661F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E0119C2464FF650072427B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1821507409E3EB945EB51652 /* Pods_WatchOSGardenBuddyV6.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011B22464FF660072427B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011CA2464FF660072427B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C224B3E430AC1C63261D05E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8CE075E3CB5DD57B0766825 /* Pods_WatchOSGardenBuddyV6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB4397A8B0514F0B822A6620 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F87221B2DA0CF9F4F3D96081 /* Pods-WatchOSGardenBuddyV6.debug.xcconfig */,
+				9D7D2582AE7317F384891484 /* Pods-WatchOSGardenBuddyV6.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8E011962464FF650072427B = {
+			isa = PBXGroup;
+			children = (
+				E8E011A12464FF650072427B /* WatchOSGardenBuddyV6 */,
+				E8E011B82464FF660072427B /* WatchOSGardenBuddyV6Tests */,
+				E8E011C22464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App */,
+				E8E011D12464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension */,
+				E8E011A02464FF650072427B /* Products */,
+				CB4397A8B0514F0B822A6620 /* Pods */,
+				8C224B3E430AC1C63261D05E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E011A02464FF650072427B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0119F2464FF650072427B /* WatchOSGardenBuddyV6.4.app */,
+				E8E011B52464FF660072427B /* WatchOSGardenBuddyV6Tests.xctest */,
+				E8E011BE2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App.app */,
+				E8E011CD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E011A12464FF650072427B /* WatchOSGardenBuddyV6 */ = {
+			isa = PBXGroup;
+			children = (
+				E8E011AB2464FF660072427B /* Assets.xcassets */,
+				E8E011EE2464FFFA0072427B /* awsconfiguration.json */,
+				E8E011A22464FF650072427B /* AppDelegate.swift */,
+				E8E011FE246501140072427B /* ExampleController.swift */,
+				E8E012002465012C0072427B /* DynamoController.swift */,
+				E8E01204246501590072427B /* CustomCalendarExampleController.swift */,
+				E8E011A42464FF650072427B /* SceneDelegate.swift */,
+				E8E01202246501420072427B /* DatePickerController.swift */,
+				E8E011FC246500FD0072427B /* ExampleNotificationController.swift */,
+				E8E011FA246500D20072427B /* PopUpView.swift */,
+				E8E011F4246500990072427B /* TimeChunk+DateComponents.swift */,
+				E8E011F6246500A90072427B /* YardWorkZone.swift */,
+				E8E011F8246500B90072427B /* ZoneCollectionView.swift */,
+				E8E011F22465007E0072427B /* StyleGenerator.swift */,
+				E8E011F02465006F0072427B /* schedules.swift */,
+				E8E011A62464FF650072427B /* ViewController.swift */,
+				E8E011A82464FF650072427B /* Main.storyboard */,
+				E8E011AD2464FF660072427B /* LaunchScreen.storyboard */,
+				E8E011B02464FF660072427B /* Info.plist */,
+				E850EA93246D077600BFF1D4 /* users.swift */,
+				E8EBA6CE247B03F400C5D401 /* WatchController.swift */,
+			);
+			path = WatchOSGardenBuddyV6;
+			sourceTree = "<group>";
+		};
+		E8E011B82464FF660072427B /* WatchOSGardenBuddyV6Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E8E011B92464FF660072427B /* WatchOSGardenBuddyV6Tests.swift */,
+				E8E011BB2464FF660072427B /* Info.plist */,
+			);
+			path = WatchOSGardenBuddyV6Tests;
+			sourceTree = "<group>";
+		};
+		E8E011C22464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E8E011C32464FF660072427B /* Interface.storyboard */,
+				E8E011C62464FF660072427B /* Assets.xcassets */,
+				E8E011C82464FF660072427B /* Info.plist */,
+			);
+			path = "WatchOSGardenBuddyV6 WatchKit App";
+			sourceTree = "<group>";
+		};
+		E8E011D12464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E84AD9C0246505B4006B42C9 /* ComplicationController.swift */,
+				E84AD9BF246505B4006B42C9 /* ExtensionDelegate.swift */,
+				E84AD9C3246505BA006B42C9 /* InterfaceController.swift */,
+				E84AD9C4246505BA006B42C9 /* NotificationController.swift */,
+				E84AD9C9246505C2006B42C9 /* ZoneRowController.swift */,
+				E84AD9C7246505C2006B42C9 /* ZoneView.swift */,
+				E84AD9C8246505C2006B42C9 /* ZoneViewController.swift */,
+				E8E011DA2464FF670072427B /* Assets.xcassets */,
+				E8E011DC2464FF670072427B /* Info.plist */,
+				E8E011DD2464FF670072427B /* PushNotificationPayload.apns */,
+				E8DF2DEF2475EAAB007104C2 /* ZoneData.swift */,
+			);
+			path = "WatchOSGardenBuddyV6 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8E0119E2464FF650072427B /* WatchOSGardenBuddyV6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E011E82464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6" */;
+			buildPhases = (
+				85EE79B82C80E147D769FCFD /* [CP] Check Pods Manifest.lock */,
+				E8E0119B2464FF650072427B /* Sources */,
+				E8E0119C2464FF650072427B /* Frameworks */,
+				E8E0119D2464FF650072427B /* Resources */,
+				E8E011E72464FF670072427B /* Embed Watch Content */,
+				209C9868F97E160FB287D760 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E011C12464FF660072427B /* PBXTargetDependency */,
+			);
+			name = WatchOSGardenBuddyV6;
+			productName = WatchOSGardenBuddyV6;
+			productReference = E8E0119F2464FF650072427B /* WatchOSGardenBuddyV6.4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8E011B42464FF660072427B /* WatchOSGardenBuddyV6Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E011EB2464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6Tests" */;
+			buildPhases = (
+				E8E011B12464FF660072427B /* Sources */,
+				E8E011B22464FF660072427B /* Frameworks */,
+				E8E011B32464FF660072427B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E011B72464FF660072427B /* PBXTargetDependency */,
+			);
+			name = WatchOSGardenBuddyV6Tests;
+			productName = WatchOSGardenBuddyV6Tests;
+			productReference = E8E011B52464FF660072427B /* WatchOSGardenBuddyV6Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8E011BD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E011E42464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6 WatchKit App" */;
+			buildPhases = (
+				E8E011BC2464FF660072427B /* Resources */,
+				E8E011E32464FF670072427B /* Embed App Extensions */,
+				64F43F5BAB6BC844D072661F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E011D02464FF660072427B /* PBXTargetDependency */,
+			);
+			name = "WatchOSGardenBuddyV6 WatchKit App";
+			productName = "WatchOSGardenBuddyV6 WatchKit App";
+			productReference = E8E011BE2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E8E011CC2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E011E02464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6 WatchKit Extension" */;
+			buildPhases = (
+				E8E011C92464FF660072427B /* Sources */,
+				E8E011CA2464FF660072427B /* Frameworks */,
+				E8E011CB2464FF660072427B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchOSGardenBuddyV6 WatchKit Extension";
+			productName = "WatchOSGardenBuddyV6 WatchKit Extension";
+			productReference = E8E011CD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8E011972464FF650072427B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Angelo De Laurentis";
+				TargetAttributes = {
+					E8E0119E2464FF650072427B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					E8E011B42464FF660072427B = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = E8E0119E2464FF650072427B;
+					};
+					E8E011BD2464FF660072427B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					E8E011CC2464FF660072427B = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = E8E0119A2464FF650072427B /* Build configuration list for PBXProject "WatchOSGardenBuddyV6" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8E011962464FF650072427B;
+			productRefGroup = E8E011A02464FF650072427B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8E0119E2464FF650072427B /* WatchOSGardenBuddyV6 */,
+				E8E011B42464FF660072427B /* WatchOSGardenBuddyV6Tests */,
+				E8E011BD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App */,
+				E8E011CC2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8E0119D2464FF650072427B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E011EF2464FFFA0072427B /* awsconfiguration.json in Resources */,
+				E8E011AF2464FF660072427B /* LaunchScreen.storyboard in Resources */,
+				E8E011AC2464FF660072427B /* Assets.xcassets in Resources */,
+				E8E011AA2464FF650072427B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011B32464FF660072427B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011BC2464FF660072427B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E011C72464FF660072427B /* Assets.xcassets in Resources */,
+				E8E011C52464FF660072427B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011CB2464FF660072427B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E011DB2464FF670072427B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		209C9868F97E160FB287D760 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchOSGardenBuddyV6/Pods-WatchOSGardenBuddyV6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchOSGardenBuddyV6/Pods-WatchOSGardenBuddyV6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchOSGardenBuddyV6/Pods-WatchOSGardenBuddyV6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85EE79B82C80E147D769FCFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchOSGardenBuddyV6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8E0119B2464FF650072427B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E011FF246501140072427B /* ExampleController.swift in Sources */,
+				E850EA94246D077600BFF1D4 /* users.swift in Sources */,
+				E8E01205246501590072427B /* CustomCalendarExampleController.swift in Sources */,
+				E8E012012465012D0072427B /* DynamoController.swift in Sources */,
+				E8E011A72464FF650072427B /* ViewController.swift in Sources */,
+				E8E011A32464FF650072427B /* AppDelegate.swift in Sources */,
+				E8E011F5246500990072427B /* TimeChunk+DateComponents.swift in Sources */,
+				E8E011FD246500FD0072427B /* ExampleNotificationController.swift in Sources */,
+				E8E011FB246500D20072427B /* PopUpView.swift in Sources */,
+				E8E011F32465007E0072427B /* StyleGenerator.swift in Sources */,
+				E8E011F12465006F0072427B /* schedules.swift in Sources */,
+				E8EBA6CF247B03F400C5D401 /* WatchController.swift in Sources */,
+				E8E011A52464FF650072427B /* SceneDelegate.swift in Sources */,
+				E8E011F9246500B90072427B /* ZoneCollectionView.swift in Sources */,
+				E8E01203246501420072427B /* DatePickerController.swift in Sources */,
+				E8E011F7246500A90072427B /* YardWorkZone.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011B12464FF660072427B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E011BA2464FF660072427B /* WatchOSGardenBuddyV6Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E011C92464FF660072427B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84AD9CC246505C2006B42C9 /* ZoneRowController.swift in Sources */,
+				E84AD9C5246505BA006B42C9 /* InterfaceController.swift in Sources */,
+				E84AD9CA246505C2006B42C9 /* ZoneView.swift in Sources */,
+				E84AD9C1246505B4006B42C9 /* ExtensionDelegate.swift in Sources */,
+				E84AD9C6246505BA006B42C9 /* NotificationController.swift in Sources */,
+				E84AD9CB246505C2006B42C9 /* ZoneViewController.swift in Sources */,
+				E84AD9C2246505B4006B42C9 /* ComplicationController.swift in Sources */,
+				E8DF2DF02475EAAB007104C2 /* ZoneData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8E011B72464FF660072427B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E0119E2464FF650072427B /* WatchOSGardenBuddyV6 */;
+			targetProxy = E8E011B62464FF660072427B /* PBXContainerItemProxy */;
+		};
+		E8E011C12464FF660072427B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E011BD2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit App */;
+			targetProxy = E8E011C02464FF660072427B /* PBXContainerItemProxy */;
+		};
+		E8E011D02464FF660072427B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E011CC2464FF660072427B /* WatchOSGardenBuddyV6 WatchKit Extension */;
+			targetProxy = E8E011CF2464FF660072427B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8E011A82464FF650072427B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E011A92464FF650072427B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E011AD2464FF660072427B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E011AE2464FF660072427B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E011C32464FF660072427B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E011C42464FF660072427B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8E011DE2464FF670072427B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8E011DF2464FF670072427B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E011E12464FF670072427B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				INFOPLIST_FILE = "WatchOSGardenBuddyV6 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		E8E011E22464FF670072427B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				INFOPLIST_FILE = "WatchOSGardenBuddyV6 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		E8E011E52464FF670072427B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				IBSC_MODULE = WatchOSGardenBuddyV6_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOSGardenBuddyV6 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		E8E011E62464FF670072427B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				IBSC_MODULE = WatchOSGardenBuddyV6_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOSGardenBuddyV6 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		E8E011E92464FF670072427B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87221B2DA0CF9F4F3D96081 /* Pods-WatchOSGardenBuddyV6.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				INFOPLIST_FILE = WatchOSGardenBuddyV6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6;
+				PRODUCT_NAME = WatchOSGardenBuddyV6.4;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8E011EA2464FF670072427B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7D2582AE7317F384891484 /* Pods-WatchOSGardenBuddyV6.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5858F4ZHQS;
+				INFOPLIST_FILE = WatchOSGardenBuddyV6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6;
+				PRODUCT_NAME = WatchOSGardenBuddyV6.4;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8E011EC2464FF670072427B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				INFOPLIST_FILE = WatchOSGardenBuddyV6Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchOSGardenBuddyV6.app/WatchOSGardenBuddyV6";
+			};
+			name = Debug;
+		};
+		E8E011ED2464FF670072427B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS7EN2U38L;
+				INFOPLIST_FILE = WatchOSGardenBuddyV6Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WatchOSGardenBuddyV6Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchOSGardenBuddyV6.app/WatchOSGardenBuddyV6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8E0119A2464FF650072427B /* Build configuration list for PBXProject "WatchOSGardenBuddyV6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E011DE2464FF670072427B /* Debug */,
+				E8E011DF2464FF670072427B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E011E02464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E011E12464FF670072427B /* Debug */,
+				E8E011E22464FF670072427B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E011E42464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E011E52464FF670072427B /* Debug */,
+				E8E011E62464FF670072427B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E011E82464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E011E92464FF670072427B /* Debug */,
+				E8E011EA2464FF670072427B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E011EB2464FF670072427B /* Build configuration list for PBXNativeTarget "WatchOSGardenBuddyV6Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E011EC2464FF670072427B /* Debug */,
+				E8E011ED2464FF670072427B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8E011972464FF650072427B /* Project object */;
+}
